@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Response;
+use App\Traits\ApiResponse;
 
 abstract class ApiRequest extends FormRequest
 {
