@@ -15,7 +15,7 @@ trait ApiResponse
 
     protected function apiError($errors, $code, $message = null)
     {
-        return reponse()->json([
+        return response()->json([
             'errors' => $errors,
             'message' => $message,
         ], $code);
