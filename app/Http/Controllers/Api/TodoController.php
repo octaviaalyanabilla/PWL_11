@@ -55,7 +55,9 @@ class TodoController extends Controller
      */
     public function show(Todo $todo)
     {
-        return $this->apiSucess($todo->load('user'));
+        return $this->apiSuccess([
+            'todo'=>$todo->load('user'),
+        ]);
     }
 
     /**
